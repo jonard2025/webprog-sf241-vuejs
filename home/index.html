@@ -3,12 +3,65 @@
 <head>
   <title>My first Vue page</title>
 <link rel="stylesheet" href="css/style.css?version=0.1">
+<link rel="stylesheet" href="css/flexbox-grid.css">
 </head>
 <body>
 
-<h1>Vue Example</h1>
+<body>
 
-<p>The message is taken from 'data' inside the Vue instance by writing {{ message }} inside the div with id="app".</p>
+<h1>Personal Profile Web - JONARD BACANI</h1>
+
+<p>
+  <span class="highlight">About Me!</span><br><br>
+
+  A dynamic, motivated and highly accomplished professional student with a customer centric approach and over 4 years experience in client-face position in different industries: Customer Service/Success, Account Management, as well as administrative roles. 
+  Strong interpersonal skills, with the ability to build and maintain long-term relationships with both internal and external stakeholders. 
+  Fluent in English and Tagalog, with excellent written and verbal business level communication skills.
+  Critical-thinker with attention to detail, playing both individually and highly resourceful as a team-player. 
+  Proficiency in Microsoft Office Suite and Google Workspace, with ability to quickly adapt to new tools and technologies.<br><br>
+
+  <span class="highlight">ASIA PACIFIC COLLEGE</span><br>
+  Bachelor of Science in Computer Science specialized in Cybersecurity and Forensic<br><br>
+
+  <span class="highlight">Interests:</span><br>
+  Cybersecurity<br>
+  Traveling, Snorkeling, Gaming<br><br>
+
+  <span class="highlight">Goal:</span><br>
+  To maintain focus, achieve goals, and be successful.<br><br>
+
+  <span class="highlight">Picture Gallery</span><br>
+</p>
+
+<!-- First image -->
+<img src="https://github.com/jonard2025/webprog-SF241-html-lessons/blob/main/Introduction/image.png?raw=true" 
+     width="500" height="500" style="display:block; margin:20px auto;">
+
+<!-- Image grid -->
+<div class="container">
+  <div>
+    <img src="https://github.com/jonard2025/webprog-SF241-html-lessons/blob/main/584420192_2013348265875466_8706221296384353039_n%20(1).png?raw=true">
+  </div>
+  <div>
+    <img src="https://github.com/jonard2025/webprog-SF241-html-lessons/blob/main/Screenshot%202025-11-28%20143023.png?raw=true">
+  </div>
+  <div>
+    <img src="https://github.com/jonard2025/webprog-SF241-html-lessons/blob/main/449180710_18363982216100360_536621986824455376_n.jpg?raw=true">
+  </div>
+    <div>LIFE IS</div>
+    <div>TOO BEAUTIFUL</div>
+    <div>TO WASTE</div>
+  <div>
+    <img src="https://github.com/jonard2025/webprog-SF241-html-lessons/blob/main/541006934_18428081827100360_4760799111197846190_n.jpg?raw=true">
+  </div>
+  <div>
+    <img src="https://github.com/jonard2025/webprog-SF241-html-lessons/blob/main/557601473_18433414243100360_8631887871414555389_n%20(1).jpg?raw=true">
+  </div>
+  <div>
+    <img src="https://github.com/jonard2025/webprog-SF241-html-lessons/blob/main/471586028_18392143615100360_8376085231183085146_n.jpg?raw=true">
+  </div>
+</div>
+
 
 <div id="app">
   {{ message }}

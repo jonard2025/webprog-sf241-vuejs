@@ -2,13 +2,8 @@
    data() {
     return {
       manyFoods: [
-        'img_burrito.svg',
-        'img_salad.svg',
-        'img_cake.svg',
-        'img_soup.svg',
-        'img_fish.svg',
-        'img_pizza.svg',
-        'img_rice.svg'
+        'https://www.w3schools.com/vue/img_cake.svg',
+        'https://www.w3schools.com/vue/img_burrito.svg',
       ]
     }
    }

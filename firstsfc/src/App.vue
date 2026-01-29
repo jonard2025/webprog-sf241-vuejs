@@ -1,32 +1,21 @@
-<template>
-  <div>
-    <h1>My Healthy Food Choices!!!</h1>
-    <PersonalProfile />
-    <FoodItem />
-    <FoodItem2 />
-  </div>
-</template>
+<script setup>
+import { ref, onMounted } from 'vue'
+import { supabase } from './lib/supabaseClient'
 
-<script>
-import PersonalProfile from './components/PersonalProfile.vue'
-import FoodItem from './components/FoodItem.vue'
-import FoodItem2 from './components/FoodItem2.vue'
+const instruments = ref([])
 
-export default {
-  name: 'App',
-  components: {
-    PersonalProfile,
-    FoodItem,
-    FoodItem2
-  }
+async function getInstruments() {
+  const { data } = await supabase.from('instruments').select()
+  instruments.value = data
 }
+
+onMounted(() => {
+   getInstruments()
+})
 </script>
 
-<style>
-h1 {
-  margin-bottom: 20px;
-  text-align: center;
-  color: #2c7a7b;
-  font-family: Arial, Helvetica, sans-serif;
-}
-</style>
+<template>
+  <ul>
+    <li v-for="instrument in instruments" :key="instrument.id">{{ instrument.name }}</li>
+  </ul>
+</template>
